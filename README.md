@@ -1,6 +1,6 @@
 # homepage
 
-Personal homepage of **Xiao Long** — Ph.D. student at the University of Science and Technology of China.
+Personal homepage of **Xiao Long** — LLM researcher and Ph.D. student at the University of Science and Technology of China.
 
 Live at <https://key2long.github.io/homepage/>.
 
