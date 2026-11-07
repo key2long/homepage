@@ -3,35 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Xiao Long · Knowledge Graphs &amp; LLMs</title>
+  <title>Xiao Long | Knowledge Graphs &amp; LLMs</title>
   <meta name="description" content="Xiao Long is a Ph.D. student at the University of Science and Technology of China, working on knowledge graphs, question answering, and reasoning with large language models.">
   <meta name="author" content="Xiao Long">
+  <meta name="keywords" content="Xiao Long, USTC, knowledge graph, KGQA, large language models, LLM reasoning, diffusion models">
   <link rel="canonical" href="https://key2long.github.io/homepage/">
 
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Xiao Long · Knowledge Graphs &amp; LLMs">
+  <meta property="og:title" content="Xiao Long | Knowledge Graphs &amp; LLMs">
   <meta property="og:description" content="Ph.D. student at USTC working on knowledge graph embedding, question answering, and LLM reasoning.">
   <meta property="og:url" content="https://key2long.github.io/homepage/">
+  <meta property="og:image" content="https://key2long.github.io/homepage/assets/portrait.jpg">
   <meta name="twitter:card" content="summary">
-
-  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f1110" media="(prefers-color-scheme: dark)">
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
-
-  <script>
-    (function () {
-      document.documentElement.classList.add('js');
-      try {
-        var saved = localStorage.getItem('theme');
-        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.dataset.theme = saved || (dark ? 'dark' : 'light');
-      } catch (e) {
-        document.documentElement.dataset.theme = 'light';
-      }
-    })();
-  </script>
 
   <script type="application/ld+json">
   {
@@ -40,12 +26,9 @@
     "name": "Xiao Long",
     "alternateName": "龙啸",
     "url": "https://key2long.github.io/homepage/",
+    "image": "https://key2long.github.io/homepage/assets/portrait.jpg",
     "jobTitle": "Ph.D. Student",
     "affiliation": {
-      "@type": "Organization",
-      "name": "University of Science and Technology of China"
-    },
-    "alumniOf": {
       "@type": "Organization",
       "name": "University of Science and Technology of China"
     },
@@ -66,382 +49,320 @@
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-pdf" viewBox="0 0 24 24">
+      <path d="M6 2.5h7.5L19 8v13.5H6z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M13.5 2.5V8H19" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+      <path d="M9 12.5h6M9 16h6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+    </symbol>
+  </svg>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="brand" href="#top" aria-label="Xiao Long — home">
-        <span class="brand-mark">XL</span>
-        <span class="brand-name">Xiao Long</span>
-      </a>
+  <div id="content">
+    <aside id="news" aria-labelledby="news-title">
+      <h2 id="news-title">News</h2>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#code">Code</a>
-      </nav>
+      <div class="news-item">
+        <b>2025</b>
+        <p>One paper accepted by <a href="https://aaai.org/conference/aaai/aaai-25/" target="_blank" rel="noopener">AAAI 2025</a> on knowledge graph question answering.</p>
+      </div>
 
-      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme">
-        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-          <circle cx="12" cy="12" r="4.2"></circle>
-          <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path>
-        </svg>
-        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a8.6 8.6 0 1 0 10.7 10.7Z"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
+      <div class="news-item">
+        <b>2025</b>
+        <p>One paper accepted by <a href="https://cvpr.thecvf.com/" target="_blank" rel="noopener">CVPR 2025</a> on domain generalization.</p>
+      </div>
 
-  <main id="main">
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="hero-inner">
-        <div class="monogram" aria-hidden="true">XL</div>
-        <p class="eyebrow">Ph.D. Student · University of Science and Technology of China</p>
-        <h1>Xiao Long <span class="cn">龙啸</span></h1>
-        <p class="lede">
-          I study how machines represent, retrieve, and reason over structured knowledge —
-          and how large language models can reason with it more faithfully.
-        </p>
-        <div class="hero-links">
-          <a class="link-arrow" href="https://github.com/key2long" target="_blank" rel="noopener">GitHub</a>
-          <a class="link-arrow" href="https://scholar.google.com/citations?user=eT7rf_MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="link-arrow" href="https://orcid.org/0009-0000-8631-6521" target="_blank" rel="noopener">ORCID</a>
+      <div class="news-item">
+        <b>2025</b>
+        <p><a href="https://arxiv.org/abs/2505.12476" target="_blank" rel="noopener">RTSoG</a> preprint released on arXiv.</p>
+      </div>
+
+      <div class="news-item">
+        <b>2024</b>
+        <p>One paper accepted by <a href="https://aaai.org/conference/aaai/aaai-24/" target="_blank" rel="noopener">AAAI 2024</a> on knowledge graph embedding.</p>
+      </div>
+
+      <div class="news-item">
+        <b>2024</b>
+        <p>One paper accepted by <a href="https://www2024.thewebconf.org/" target="_blank" rel="noopener">WWW 2024</a> on knowledge graph completion.</p>
+      </div>
+
+      <div class="news-item">
+        <b>2022</b>
+        <p>One paper accepted by <a href="https://2022.emnlp.org/" target="_blank" rel="noopener">EMNLP 2022</a> on logical query answering.</p>
+      </div>
+
+      <div class="news-item">
+        <b>2021</b>
+        <p>One paper accepted by <a href="https://www.ieee.org/" target="_blank" rel="noopener">ICME 2021</a> on path ranking.</p>
+      </div>
+    </aside>
+
+    <main id="left">
+      <header class="profile">
+        <img class="portrait" src="assets/portrait.jpg" width="700" height="980" alt="Portrait of Xiao Long">
+        <div class="profile-info">
+          <h1>Xiao Long</h1>
+          <p class="cn-name">龙啸</p>
+          <p class="role"><b>Ph.D. Student</b></p>
+          <p class="affiliation">University of Science and Technology of China</p>
+          <p class="focus">Current focus: Knowledge Graphs / LLM Reasoning</p>
+          <p class="links">
+            <a href="https://github.com/key2long" target="_blank" rel="noopener">GitHub</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://scholar.google.com/citations?user=eT7rf_MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://orcid.org/0009-0000-8631-6521" target="_blank" rel="noopener">ORCID</a>
+          </p>
         </div>
-      </div>
-      <a class="scroll-hint" href="#about" aria-label="Scroll to about">
-        <span></span>
-      </a>
-    </section>
+      </header>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <div class="section-head reveal">
-        <span class="section-index">01</span>
-        <h2>About</h2>
+      <div class="box">
+        I am a Ph.D. student at the <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener">University of Science and Technology of China (USTC)</a>.
+        My research sits at the intersection of <b>knowledge graphs</b> and <b>large language models</b>: I build models that
+        represent, retrieve, and reason over structured knowledge &mdash; from diffusion-based knowledge graph completion and
+        complex logical query answering to evidence-path reasoning that grounds LLM answers in verifiable facts.
+        <br><br>
+        I am particularly interested in how models hold uncertainty about what they know, when they should retrieve rather
+        than generate, and what makes a reasoning path trustworthy.
       </div>
-      <div class="section-body reveal">
-        <p class="lead">
-          I am a Ph.D. student at the <strong>University of Science and Technology of China (USTC)</strong>,
-          where I work on knowledge graphs and language model reasoning.
-        </p>
-        <p>
-          My research sits at the intersection of knowledge graphs and large language models.
-          I build models that treat knowledge as something to be generated, embedded, and
-          reasoned over — from diffusion-based knowledge graph completion and complex logical
-          query answering, to evidence-path reasoning that grounds LLM answers in verifiable facts.
-        </p>
-        <p>
-          I am especially drawn to questions that sit between representation and reasoning:
-          How should a model hold uncertainty about what it knows? When should it retrieve,
-          and when should it generate? What makes a reasoning path trustworthy?
-        </p>
-      </div>
-    </section>
 
-    <!-- Research -->
-    <section class="section" id="research">
-      <div class="section-head reveal">
-        <span class="section-index">02</span>
-        <h2>Research</h2>
-      </div>
-      <div class="section-body">
-        <div class="research-grid reveal">
-          <article class="research-card">
-            <h3>Knowledge Graph Embedding</h3>
-            <p>Learning representations that capture multiple relation semantics, uncertainty, and logical structure.</p>
-          </article>
-          <article class="research-card">
-            <h3>Knowledge Graph Question Answering</h3>
-            <p>Reasoning over evidence paths and subgraphs to answer complex questions with grounded evidence.</p>
-          </article>
-          <article class="research-card">
-            <h3>LLM Reasoning</h3>
-            <p>Reward-guided search, tool use, and retrieval strategies that make language models more reliable.</p>
-          </article>
-          <article class="research-card">
-            <h3>Diffusion for Structured Data</h3>
-            <p>Generative models for knowledge graph completion and conditional entity prediction.</p>
-          </article>
-        </div>
-        <ul class="tags reveal" aria-label="Research keywords">
-          <li>Knowledge Graphs</li>
-          <li>KGQA</li>
-          <li>Large Language Models</li>
-          <li>Diffusion Models</li>
-          <li>Logical Query Answering</li>
-          <li>Reasoning</li>
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <ul class="interest-list">
+          <li>Knowledge graph embedding and completion</li>
+          <li>Knowledge graph question answering</li>
+          <li>Large language model reasoning</li>
+          <li>Diffusion models for structured data</li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <!-- Publications -->
-    <section class="section" id="publications">
-      <div class="section-head reveal">
-        <span class="section-index">03</span>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="info-box">
+          <div class="entry-head">
+            <span class="title">University of Science and Technology of China (USTC)</span>
+            <span class="date">Expected 2026</span>
+          </div>
+          <div class="entry-sub">Ph.D. Student &nbsp;&middot;&nbsp; Hefei, China</div>
+        </div>
+      </section>
+
+      <section id="experiences">
+        <h2>Experiences</h2>
+        <div class="info-box">
+          <div class="entry-head">
+            <span class="title">Research Intern</span>
+            <span class="date">Oct 2024 &ndash; Jun 2025</span>
+          </div>
+          <div class="entry-sub">Tongyi Lab, Alibaba Cloud &nbsp;&middot;&nbsp; Hangzhou, China</div>
+        </div>
+        <div class="info-box">
+          <div class="entry-head">
+            <span class="title">Research Intern</span>
+            <span class="date">Jul 2020 &ndash; Jan 2021</span>
+          </div>
+          <div class="entry-sub">Pengcheng Laboratory &nbsp;&middot;&nbsp; Shenzhen, China</div>
+        </div>
+      </section>
+
+      <section id="papers">
         <h2>Publications</h2>
-      </div>
-      <div class="section-body">
-        <p class="section-note reveal">Selected papers. See <a href="https://scholar.google.com/citations?user=eT7rf_MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> for the complete list.</p>
+        <p class="papers-note">Full list on <a href="https://scholar.google.com/citations?user=eT7rf_MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
 
-        <ol class="pub-list">
-          <li class="pub reveal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://doi.org/10.1609/aaai.v39i12.33338" target="_blank" rel="noopener">
-                  EPERM: An Evidence Path Enhanced Reasoning Model for Knowledge Graph Question and Answering
-                </a>
-              </h3>
-              <p class="pub-authors"><span class="me">Xiao Long</span>, Liansheng Zhuang, Aodi Li, Minghong Yao, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">AAAI 2025</span>
-                <span class="sep">·</span>
-                <a href="https://doi.org/10.1609/aaai.v39i12.33338" target="_blank" rel="noopener">Paper</a>
-                <span class="sep">·</span>
-                <a href="https://github.com/key2long/EPERM" target="_blank" rel="noopener">Code</a>
+        <div class="year-group">
+          <h3 class="year-label">2025</h3>
+
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://doi.org/10.1609/aaai.v39i12.33338" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://doi.org/10.1609/aaai.v39i12.33338" target="_blank" rel="noopener">EPERM: An Evidence Path Enhanced Reasoning Model for Knowledge Graph Question and Answering</a></p>
+              <p class="paper-authors"><b>Xiao Long</b>, Liansheng Zhuang, Aodi Li, Minghong Yao, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">AAAI 2025</span>
+                [<a class="a-link" href="https://doi.org/10.1609/aaai.v39i12.33338" target="_blank" rel="noopener">PDF</a>]
+                [<a class="a-link" href="https://github.com/key2long/EPERM" target="_blank" rel="noopener">Code</a>]
               </p>
             </div>
-          </li>
+          </article>
 
-          <li class="pub reveal">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://doi.org/10.1609/aaai.v38i8.28732" target="_blank" rel="noopener">
-                  KGDM: A Diffusion Model to Capture Multiple Relation Semantics for Knowledge Graph Embedding
-                </a>
-              </h3>
-              <p class="pub-authors"><span class="me">Xiao Long</span>, Liansheng Zhuang, Aodi Li, Jiuchang Wei, Houqiang Li, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">AAAI 2024</span>
-                <span class="sep">·</span>
-                <a href="https://doi.org/10.1609/aaai.v38i8.28732" target="_blank" rel="noopener">Paper</a>
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://doi.org/10.1109/CVPR52734.2025.01430" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://doi.org/10.1109/CVPR52734.2025.01430" target="_blank" rel="noopener">Seeking Consistent Flat Minima for Better Domain Generalization via Refining Loss Landscapes</a></p>
+              <p class="paper-authors">Aodi Li, Liansheng Zhuang, <b>Xiao Long</b>, Minghong Yao, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">CVPR 2025</span>
+                [<a class="a-link" href="https://doi.org/10.1109/CVPR52734.2025.01430" target="_blank" rel="noopener">PDF</a>]
               </p>
             </div>
-          </li>
+          </article>
 
-          <li class="pub reveal">
-            <div class="pub-year">2024</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://doi.org/10.1145/3589334.3645451" target="_blank" rel="noopener">
-                  Fact Embedding through Diffusion Model for Knowledge Graph Completion
-                </a>
-              </h3>
-              <p class="pub-authors"><span class="me">Xiao Long</span>, Liansheng Zhuang, Aodi Li, Houqiang Li, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">WWW 2024</span>
-                <span class="sep">·</span>
-                <a href="https://doi.org/10.1145/3589334.3645451" target="_blank" rel="noopener">Paper</a>
-                <span class="sep">·</span>
-                <a href="https://github.com/key2long/Fact-embedding" target="_blank" rel="noopener">Code</a>
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://arxiv.org/abs/2505.12476" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://arxiv.org/abs/2505.12476" target="_blank" rel="noopener">Enhancing Large Language Models with Reward-guided Tree Search for Knowledge Graph Question and Answering</a></p>
+              <p class="paper-authors"><b>Xiao Long</b>, Liansheng Zhuang, Chen Shen, Shaotian Yan, Yifei Li, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">arXiv 2025</span>
+                [<a class="a-link" href="https://arxiv.org/abs/2505.12476" target="_blank" rel="noopener">PDF</a>]
+                [<a class="a-link" href="https://github.com/key2long/RTSoG" target="_blank" rel="noopener">Code</a>]
               </p>
             </div>
-          </li>
+          </article>
 
-          <li class="pub reveal">
-            <div class="pub-year">2022</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://aclanthology.org/2022.emnlp-main.194/" target="_blank" rel="noopener">
-                  Neural-based Mixture Probabilistic Query Embedding for Answering FOL Queries on Knowledge Graphs
-                </a>
-              </h3>
-              <p class="pub-authors"><span class="me">Xiao Long</span>, Liansheng Zhuang, Aodi Li, Shafei Wang, Houqiang Li</p>
-              <p class="pub-meta">
-                <span class="venue">EMNLP 2022</span>
-                <span class="sep">·</span>
-                <a href="https://aclanthology.org/2022.emnlp-main.194/" target="_blank" rel="noopener">Paper</a>
-                <span class="sep">·</span>
-                <a href="https://github.com/key2long/NMP-QEM" target="_blank" rel="noopener">Code</a>
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://arxiv.org/abs/2501.18864" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://arxiv.org/abs/2501.18864" target="_blank" rel="noopener">Flatness Guided Test-Time Adaptation for Vision-Language Models</a></p>
+              <p class="paper-authors">Aodi Li, Liansheng Zhuang, <b>Xiao Long</b>, Houqiang Li, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">arXiv 2025</span>
+                [<a class="a-link" href="https://arxiv.org/abs/2501.18864" target="_blank" rel="noopener">PDF</a>]
               </p>
             </div>
-          </li>
-
-          <li class="pub reveal">
-            <div class="pub-year">2021</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://doi.org/10.1109/ICME51207.2021.9428138" target="_blank" rel="noopener">
-                  Path Ranking Model for Entity Prediction
-                </a>
-              </h3>
-              <p class="pub-authors"><span class="me">Xiao Long</span>, Minghong Yao, Liansheng Zhuang, Houqiang Li, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">ICME 2021</span>
-                <span class="sep">·</span>
-                <a href="https://doi.org/10.1109/ICME51207.2021.9428138" target="_blank" rel="noopener">Paper</a>
-                <span class="sep">·</span>
-                <a href="https://github.com/key2long/MyPra" target="_blank" rel="noopener">Code</a>
-              </p>
-            </div>
-          </li>
-
-          <li class="pub reveal">
-            <div class="pub-year">2021</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://doi.org/10.1007/978-3-030-88013-2_32" target="_blank" rel="noopener">
-                  Learn the Approximation Distribution of Sparse Coding with Mixture Sparsity Network
-                </a>
-              </h3>
-              <p class="pub-authors">Li Li, <span class="me">Xiao Long</span>, Liansheng Zhuang, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">PRCV 2021</span>
-                <span class="sep">·</span>
-                <a href="https://doi.org/10.1007/978-3-030-88013-2_32" target="_blank" rel="noopener">Paper</a>
-              </p>
-            </div>
-          </li>
-        </ol>
-
-        <h3 class="subhead reveal">Preprints &amp; recent work</h3>
-        <ol class="pub-list">
-          <li class="pub reveal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://arxiv.org/abs/2505.12476" target="_blank" rel="noopener">
-                  Enhancing Large Language Models with Reward-guided Tree Search for Knowledge Graph Question and Answering
-                </a>
-              </h3>
-              <p class="pub-authors"><span class="me">Xiao Long</span>, Liansheng Zhuang, Chen Shen, Shaotian Yan, Yifei Li, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">arXiv</span>
-                <span class="sep">·</span>
-                <a href="https://arxiv.org/abs/2505.12476" target="_blank" rel="noopener">Paper</a>
-                <span class="sep">·</span>
-                <a href="https://github.com/key2long/RTSoG" target="_blank" rel="noopener">Code</a>
-              </p>
-            </div>
-          </li>
-
-          <li class="pub reveal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://doi.org/10.1109/CVPR52734.2025.01430" target="_blank" rel="noopener">
-                  Seeking Consistent Flat Minima for Better Domain Generalization via Refining Loss Landscapes
-                </a>
-              </h3>
-              <p class="pub-authors">Aodi Li, Liansheng Zhuang, <span class="me">Xiao Long</span>, Minghong Yao, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">CVPR 2025</span>
-                <span class="sep">·</span>
-                <a href="https://doi.org/10.1109/CVPR52734.2025.01430" target="_blank" rel="noopener">Paper</a>
-              </p>
-            </div>
-          </li>
-
-          <li class="pub reveal">
-            <div class="pub-year">2025</div>
-            <div class="pub-content">
-              <h3 class="pub-title">
-                <a href="https://arxiv.org/abs/2501.18864" target="_blank" rel="noopener">
-                  Flatness Guided Test-Time Adaptation for Vision-Language Models
-                </a>
-              </h3>
-              <p class="pub-authors">Aodi Li, Liansheng Zhuang, <span class="me">Xiao Long</span>, Houqiang Li, Shafei Wang</p>
-              <p class="pub-meta">
-                <span class="venue">arXiv</span>
-                <span class="sep">·</span>
-                <a href="https://arxiv.org/abs/2501.18864" target="_blank" rel="noopener">Paper</a>
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Code -->
-    <section class="section" id="code">
-      <div class="section-head reveal">
-        <span class="section-index">04</span>
-        <h2>Code</h2>
-      </div>
-      <div class="section-body">
-        <p class="section-note reveal">Open-source implementations from my papers and side projects. More on <a href="https://github.com/key2long" target="_blank" rel="noopener">GitHub</a>.</p>
-
-        <div class="project-grid">
-          <a class="project reveal" href="https://github.com/key2long/NMP-QEM" target="_blank" rel="noopener">
-            <div class="project-top">
-              <h3>NMP-QEM</h3>
-              <span class="stars" aria-label="32 stars">
-                <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1.5l1.9 3.9 4.3.6-3.1 3 .7 4.2L8 11.2l-3.8 2 .7-4.2-3.1-3 4.3-.6L8 1.5z"/></svg>
-                32
-              </span>
-            </div>
-            <p>Neural-based mixture probabilistic query embedding for answering FOL queries on knowledge graphs.</p>
-            <span class="project-tag">PyTorch</span>
-          </a>
-
-          <a class="project reveal" href="https://github.com/key2long/RTSoG" target="_blank" rel="noopener">
-            <div class="project-top">
-              <h3>RTSoG</h3>
-              <span class="stars" aria-label="1 star">
-                <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1.5l1.9 3.9 4.3.6-3.1 3 .7 4.2L8 11.2l-3.8 2 .7-4.2-3.1-3 4.3-.6L8 1.5z"/></svg>
-                1
-              </span>
-            </div>
-            <p>Reward-guided tree search that enhances large language models for knowledge graph question answering.</p>
-            <span class="project-tag">Python</span>
-          </a>
-
-          <a class="project reveal" href="https://github.com/key2long/EPERM" target="_blank" rel="noopener">
-            <div class="project-top">
-              <h3>EPERM</h3>
-              <span class="stars" aria-label="No stars yet">
-                <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1.5l1.9 3.9 4.3.6-3.1 3 .7 4.2L8 11.2l-3.8 2 .7-4.2-3.1-3 4.3-.6L8 1.5z"/></svg>
-                0
-              </span>
-            </div>
-            <p>Evidence-path enhanced reasoning for knowledge graph question answering.</p>
-            <span class="project-tag">Python</span>
-          </a>
-
-          <a class="project reveal" href="https://github.com/key2long/MyPra" target="_blank" rel="noopener">
-            <div class="project-top">
-              <h3>MyPra</h3>
-              <span class="stars" aria-label="2 stars">
-                <svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 1.5l1.9 3.9 4.3.6-3.1 3 .7 4.2L8 11.2l-3.8 2 .7-4.2-3.1-3 4.3-.6L8 1.5z"/></svg>
-                2
-              </span>
-            </div>
-            <p>Path ranking model for entity prediction over knowledge graphs.</p>
-            <span class="project-tag">Python</span>
-          </a>
+          </article>
         </div>
-      </div>
-    </section>
 
-    <!-- Contact -->
-    <section class="section contact" id="contact">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">Get in touch</p>
-        <h2>Let's talk about<br>knowledge and reasoning.</h2>
-        <p class="contact-text">
-          I am always happy to discuss research, exchange ideas, or explore a collaboration.
-          The best way to reach me is through GitHub or Google Scholar.
-        </p>
-        <div class="hero-links">
-          <a class="link-arrow" href="https://github.com/key2long" target="_blank" rel="noopener">GitHub</a>
-          <a class="link-arrow" href="https://scholar.google.com/citations?user=eT7rf_MAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="link-arrow" href="https://orcid.org/0009-0000-8631-6521" target="_blank" rel="noopener">ORCID</a>
+        <div class="year-group">
+          <h3 class="year-label">2024</h3>
+
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://doi.org/10.1609/aaai.v38i8.28732" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://doi.org/10.1609/aaai.v38i8.28732" target="_blank" rel="noopener">KGDM: A Diffusion Model to Capture Multiple Relation Semantics for Knowledge Graph Embedding</a></p>
+              <p class="paper-authors"><b>Xiao Long</b>, Liansheng Zhuang, Aodi Li, Jiuchang Wei, Houqiang Li, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">AAAI 2024</span>
+                [<a class="a-link" href="https://doi.org/10.1609/aaai.v38i8.28732" target="_blank" rel="noopener">PDF</a>]
+              </p>
+            </div>
+          </article>
+
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://doi.org/10.1145/3589334.3645451" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://doi.org/10.1145/3589334.3645451" target="_blank" rel="noopener">Fact Embedding through Diffusion Model for Knowledge Graph Completion</a></p>
+              <p class="paper-authors"><b>Xiao Long</b>, Liansheng Zhuang, Aodi Li, Houqiang Li, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">WWW 2024</span>
+                [<a class="a-link" href="https://doi.org/10.1145/3589334.3645451" target="_blank" rel="noopener">PDF</a>]
+                [<a class="a-link" href="https://github.com/key2long/Fact-embedding" target="_blank" rel="noopener">Code</a>]
+              </p>
+            </div>
+          </article>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© <span id="year">2026</span> Xiao Long</p>
-      <p class="footer-note">Built with plain HTML &amp; CSS · Hosted on GitHub Pages</p>
-    </div>
+        <div class="year-group">
+          <h3 class="year-label">2022</h3>
+
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://aclanthology.org/2022.emnlp-main.194/" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://aclanthology.org/2022.emnlp-main.194/" target="_blank" rel="noopener">Neural-based Mixture Probabilistic Query Embedding for Answering FOL Queries on Knowledge Graphs</a></p>
+              <p class="paper-authors"><b>Xiao Long</b>, Liansheng Zhuang, Aodi Li, Shafei Wang, Houqiang Li</p>
+              <p class="paper-venue">
+                <span class="conference">EMNLP 2022</span>
+                [<a class="a-link" href="https://aclanthology.org/2022.emnlp-main.194/" target="_blank" rel="noopener">PDF</a>]
+                [<a class="a-link" href="https://github.com/key2long/NMP-QEM" target="_blank" rel="noopener">Code</a>]
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="year-group">
+          <h3 class="year-label">2021</h3>
+
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://doi.org/10.1109/ICME51207.2021.9428138" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://doi.org/10.1109/ICME51207.2021.9428138" target="_blank" rel="noopener">Path Ranking Model for Entity Prediction</a></p>
+              <p class="paper-authors"><b>Xiao Long</b>, Minghong Yao, Liansheng Zhuang, Houqiang Li, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">ICME 2021</span>
+                [<a class="a-link" href="https://doi.org/10.1109/ICME51207.2021.9428138" target="_blank" rel="noopener">PDF</a>]
+                [<a class="a-link" href="https://github.com/key2long/MyPra" target="_blank" rel="noopener">Code</a>]
+              </p>
+            </div>
+          </article>
+
+          <article class="paper-item">
+            <div class="paper-link">
+              <a href="https://doi.org/10.1007/978-3-030-88013-2_32" target="_blank" rel="noopener" aria-label="PDF">
+                <svg class="pdf-icon"><use href="#icon-pdf"></use></svg>
+                <span>pdf</span>
+              </a>
+            </div>
+            <div class="paper-body">
+              <p class="paper-title"><a href="https://doi.org/10.1007/978-3-030-88013-2_32" target="_blank" rel="noopener">Learn the Approximation Distribution of Sparse Coding with Mixture Sparsity Network</a></p>
+              <p class="paper-authors">Li Li, <b>Xiao Long</b>, Liansheng Zhuang, Shafei Wang</p>
+              <p class="paper-venue">
+                <span class="conference">PRCV 2021</span>
+                [<a class="a-link" href="https://doi.org/10.1007/978-3-030-88013-2_32" target="_blank" rel="noopener">PDF</a>]
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="code">
+        <h2>Open Source</h2>
+        <div class="code-list">
+          <div class="code-item">
+            <span class="title">NMP-QEM</span> &mdash; PyTorch implementation of neural mixture probabilistic query embedding for FOL queries on knowledge graphs. <a href="https://github.com/key2long/NMP-QEM" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="code-item">
+            <span class="title">RTSoG</span> &mdash; Reward-guided tree search for knowledge graph question answering with LLMs. <a href="https://github.com/key2long/RTSoG" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="code-item">
+            <span class="title">EPERM</span> &mdash; Evidence-path enhanced reasoning for knowledge graph question answering. <a href="https://github.com/key2long/EPERM" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer id="footer">
+    <p>&copy; 2026 Xiao Long &nbsp;&middot;&nbsp; Last updated November 2026</p>
   </footer>
-
-  <script src="assets/main.js" defer></script>
 </body>
 </html>
